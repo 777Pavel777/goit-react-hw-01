@@ -1,5 +1,10 @@
-import { Profile } from './profile/Profile';
 import userData from '../userData.json';
+import friends from '../friends.json';
+import transactions from '../transactions.json';
+
+import Profile from './profile/Profile';
+import FriendList from './friendList/FriendList';
+import Transaction from './transaction/Transaction';
 
 export default function App() {
   return (
@@ -11,6 +16,10 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+
+      <FriendList friends={friends} />
+
+      <Transaction transactions={transactions} />
     </div>
   );
 }

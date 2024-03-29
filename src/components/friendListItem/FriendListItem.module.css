@@ -1,0 +1,11 @@
+.userStatus {
+  color: #333;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}

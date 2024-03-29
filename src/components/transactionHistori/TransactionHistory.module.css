@@ -1,0 +1,11 @@
+.text:nth-child(1),
+.text:nth-child(2),
+.text:nth-child(3) {
+  width: calc(100% / 3);
+  padding: 8px;
+}
+
+.text:nth-child(2) {
+  border-right: 2px solid #333;
+  border-left: 2px solid #333;
+}
